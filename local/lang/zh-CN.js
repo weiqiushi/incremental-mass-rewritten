@@ -270,6 +270,7 @@ Effect: => 效果：
 Cost: => 花费：
 Currently: => 当前效果：
 Requirement: => 需求：
+Requirement: {0} => 需求： {0}
 Reward: => 奖励：
 Level: => 等级：
 Level => 等级
