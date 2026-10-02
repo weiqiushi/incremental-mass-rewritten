@@ -1,0 +1,11 @@
+/* Preserve the chosen font, with CJK fallbacks for fonts without Chinese glyphs. */
+@font-face {
+    font-family: "IMR Chinese Subset";
+    src: url("fonts/IMRChineseSubset.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+:where(html[lang="zh-CN"]) * {
+    font-family: var(--font), "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "IMR Chinese Subset", "Noto Sans JP", sans-serif;
+}
