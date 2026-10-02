@@ -2,6 +2,17 @@
 (() => {
     'use strict';
     const pack = window.IMR_ZH_CN;
+    // This upstream helper only builds display prefixes. Localize it before
+    // callers concatenate rank/building names, including the special Meta- form.
+    if (typeof window.getScalingName === 'function') {
+        const scalingName = window.getScalingName;
+        window.getScalingName = function (...args) {
+            const label = scalingName.apply(this, args);
+            const translated = pack.scalingLabels?.[label.trim().replace(/-$/, '')];
+            return translated ? translated + ' ' : label;
+        };
+    }
+
     const normalize = text => text.replace(/\s+/g, ' ').trim();
     const escape = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const cache = new Map();

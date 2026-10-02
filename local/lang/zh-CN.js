@@ -179,7 +179,7 @@ Rank Collapse => 级别坍缩
 Overflow => 溢出
 Siltation => 淤积
 Super => 超级
-Hyper => 究级
+Hyper => 究极
 Ultra => 超究
 Meta => 元
 Exotic => 奇异
@@ -259,7 +259,7 @@ Save to file => 导出为文件
 Export => 导出存档
 Import => 导入存档
 HARD RESET => 硬重置
-Buy Max => 购买最大数量
+Buy Max => 购买最大
 Buy All => 全部购买
 Max All Upgrades => 购买全部升级
 Reset => 重置
@@ -507,20 +507,20 @@ to dimensional mass => 维度质量
         ["Kaon & Pion gains are multiplied by 5 every Ascension.","每次飞升使 K 介子和 π 介子获取乘以 5。"],
         ["Remove dilated mass's overflow.","移除膨胀质量的溢出。"],
         ["Remove atomic power's overflow.","移除原子能量的溢出。"],
-        ["Remove Exotic Rank & Tier, Super & Hyper Hex.","移除级别与阶层的奇异折算，以及六重阶层的超级与究级折算。"],
+        ["Remove Exotic Rank & Tier, Super & Hyper Hex.","移除级别与阶层的奇异折算，以及六重阶层的超级与究极折算。"],
         ["Challenge 5's reward is changed again.","再次改变挑战 5 的奖励。"],
         ["The bonus of any radiation boost now multiplies its strengthness at an reduced rate.","辐射波加成的额外等级改为以削弱的效果乘算其强度。"],
         ["19th Big Rip upgrade is twice as effective again.","大撕裂升级 19 的效果再次翻倍。"],
         ["15th Black Hole upgrade now works like as Atomic Power's effect. The bonus of BHC now multiplies its level instead of adding.","黑洞升级 15 改为使用与原子能量效果相似的公式。黑洞压缩器的额外等级改为乘算。"],
         ["Prestige Base Exponent is doubled. Big Rip Upgrade 19 now affects Renown.","转生基础值的指数翻倍。大撕裂升级 19 现在也影响名誉。"],
         ["Super Infinity Theorem is 10% weaker.","无限定理的超级折算弱化 10%。"],
-        ["Super and Hyper Overpower starts +50 later.","超强化器的超级与究级折算延迟 50 级出现。"],
+        ["Super and Hyper Overpower starts +50 later.","超强化器的超级与究极折算延迟 50 级出现。"],
         ["Meta-Prestige Level starts 2x later.","转生等级的元折算延迟 2 倍出现。"],
         ["MCF tier requirements are reduced by 10%.","缪子催化聚变的阶层需求降低 10%。"],
         ["Increase prestige tiers exponent for ascension base by +0.333.","计算飞升基础值时，转生等级的指数增加 0.333。"],
         ["{8} (force an Infinity reset), but {9} up.","{8}（强制进行无限重置），但提升{9}。"],
         ["Req:","需求："],
-        ["At {0} {1} - {2}","达到 {0} {1}：{2}"],
+        ["At {0} {1} - {2}","{0} {1}：{2}"],
         ["of Ascension Base","的飞升基础值"],
         ["Are you sure you want to reset?","确定要重置吗？"],
         ["Boost Mass gain by {0}","使质量获取乘以 {0}"],
@@ -702,13 +702,13 @@ to dimensional mass => 维度质量
         ["Double Rage Powers.","狂怒能量获取翻倍。"],
         ["You can automatically tier up.","自动提升阶层。"],
         ["Tickspeed adds Stronger.","时间速度提供额外强化器。"],
-        ["Super and Hyper mass upgrade scalings are weaker based on Rage Power.","基于狂怒能量，弱化质量升级的超级与究级折算。"],
+        ["Super and Hyper mass upgrade scalings are weaker based on Rage Power.","基于狂怒能量，弱化质量升级的超级与究极折算。"],
         ["Stronger power is increased by +^0.25.","强化器倍率增加 0.25 次方。"],
         ["Super Rank scaling is 20% weaker.","级别的超级折算弱化 20%。"],
         ["Black Hole mass's gain is boosted by Rage Powers.","狂怒能量加成黑洞质量获取。"],
         ["OoMs of Rage powers increase stronger power at a reduced rate.","狂怒能量的数量级以削弱的效果增加强化器倍率。"],
         ["Mass gain softcap starts 3x later for every Rank you have.","每个级别使质量获取的软上限延迟 3 倍出现。"],
-        ["Hyper Tickspeed starts 50 later.","时间速度的究级折算延迟 50 级出现。"],
+        ["Hyper Tickspeed starts 50 later.","时间速度的究极折算延迟 50 级出现。"],
         ["Mass boosts Atom gain.","质量加成原子获取。"],
         ["Remove tickspeed power's softcap.","移除时间速度倍率的软上限。"],
         ["Overpower power is increased by 0.005.","超强化器倍率增加 0.005。"],
@@ -732,7 +732,7 @@ to dimensional mass => 维度质量
         ["Stronger Effect's softcap starts later based on unspent Dark Matters.","未消耗的暗物质延迟强化器效果的软上限。"],
         ["Mass gain is boosted by OoM of Dark Matters.","暗物质的数量级加成质量获取。"],
         ["Mass gain softcap is 10% weaker.","质量获取的软上限弱化 10%。"],
-        ["Hyper Tickspeed scales 15% weaker.","时间速度的究级折算弱化 15%。"],
+        ["Hyper Tickspeed scales 15% weaker.","时间速度的究极折算弱化 15%。"],
         ["Quark gain is multiplied by 10.","夸克获取乘以 10。"],
         ["Neutron Powers boost mass of Black Hole gain.","中子能量加成黑洞质量获取。"],
         ["Atomic Powers add Black Hole Condensers at a reduced rate.","原子能量以削弱的效果提供额外黑洞压缩器。"],
@@ -757,7 +757,7 @@ to dimensional mass => 维度质量
         ["Tickspeed boosts each particle powers gain.","时间速度加成各粒子能量获取。"],
         ["Atomic Powers boost Quark gain.","原子能量加成夸克获取。"],
         ["Stronger effect softcap is 15% weaker.","强化器效果的软上限弱化 15%。"],
-        ["Tier requirement is halved. Hyper Rank starts later based on Tiers you have.","阶层需求减半。基于阶层，延迟级别的究级折算。"],
+        ["Tier requirement is halved. Hyper Rank starts later based on Tiers you have.","阶层需求减半。基于阶层，延迟级别的究极折算。"],
         ["Dilated mass also boosts BH Condenser & Cosmic Ray powers at a reduced rate.","膨胀质量以削弱的效果加成黑洞压缩器与宇宙射线倍率。"],
         ["Wormhole effects are better.","增强虫洞效果。"],
         ["Mass from Black Hole effect is better.","增强黑洞质量的效果。"],
@@ -829,7 +829,7 @@ to dimensional mass => 维度质量
         ["Passively gain 100% of the atoms you would get from resetting each second. Atomic Power boost Relativistic particles gain at a reduced rate.","每秒自动获取重置时可获得原子的 100%。原子能量以削弱的效果加成相对论粒子获取。"],
         ["Increases Mass Dilation upgrade 1's base by 1.","质量膨胀升级 1 的底数增加 1。"],
         ["Hardened challenge scaling is weaker for each element bought.","每购买一个元素，弱化挑战的硬化折算。"],
-        ["Hyper/Ultra Rank & Tickspeed scales 25% weaker.","级别与时间速度的究级和超究折算弱化 25%。"],
+        ["Hyper/Ultra Rank & Tickspeed scales 25% weaker.","级别与时间速度的究极和超究折算弱化 25%。"],
         ["Mass gain is raised to 1.5 while in mass dilation.","质量膨胀中，质量获取变为原来的 1.5 次方。"],
         ["Proton power's effects are better.","增强质子能量的效果。"],
         ["Electron power's effects are better. Passively gain 10% of each particle you would assign quarks.","增强电子能量的效果。自动获得各粒子，数量为分配夸克时获得量的 10%。"],
@@ -859,7 +859,7 @@ to dimensional mass => 维度质量
         ["Mass Dilation upgrade 6 is 75% stronger.","质量膨胀升级 6 增强 75%。"],
         ["Normal mass boosts all-star resources at a reduced rate.","普通质量以削弱的效果加成所有星辰资源。"],
         ["Square Atomic Upgrade 6.","原子升级 6 的效果平方。"],
-        ["Hyper/Ultra BH Condenser & Cosmic Ray scale 25% weaker.","黑洞压缩器与宇宙射线的究级和超究折算弱化 25%。"],
+        ["Hyper/Ultra BH Condenser & Cosmic Ray scale 25% weaker.","黑洞压缩器与宇宙射线的究极和超究折算弱化 25%。"],
         ["Add 200 more C8 maximum completions.","挑战 8 的次数上限增加 200。"],
         ["Tickspeed power boosts base of Star Booster at a reduced rate.","时间速度倍率以削弱的效果增加星辰助推器的底数。"],
         ["Ultra Rank & Tickspeed scale weaker based on Tier.","阶层弱化级别与时间速度的超究折算。"],
@@ -947,7 +947,7 @@ to dimensional mass => 维度质量
         ["Super Prestige Level & Honor are 5% weaker.","转生等级与荣耀的超级折算弱化 5%。"],
         ["Dark Shadow gain is boosted by Death Shards.","死寂碎片加成黑暗之影获取。"],
         ["You can now gain Relativistic Energy outside of Big Rip.","允许在大撕裂外获取相对论能量。"],
-        ["Super & Hyper cosmic string scalings are 25% weaker.","宇宙弦的超级与究级折算弱化 25%。"],
+        ["Super & Hyper cosmic string scalings are 25% weaker.","宇宙弦的超级与究极折算弱化 25%。"],
         ["Supernova boosts blueprint particles earned.","超新星加成蓝图粒子获取。"],
         ["Gain 100% of the Quantizes you would get from resetting each second. Supernova boosts quantizes.","每秒获取重置时可获得量子次数的 100%。超新星加成量子次数。"],
         ["Uncap 10th Quantize milestone’s effect.","移除量子里程碑 10 效果的上限。"],
@@ -966,7 +966,7 @@ to dimensional mass => 维度质量
         ["Add 75 more C13 maximum completions.","挑战 13 的次数上限增加 75。"],
         ["Boost Dark Ray gain based on quarks.","夸克加成暗射线获取。"],
         ["Prestige base exponent boosts Abyssal Blot gain.","转生基础值的指数加成深渊之渍获取。"],
-        ["Hyper Prestige Level, Tetr & Pent scalings are 10% weaker.","转生等级、四重阶层与五重阶层的究级折算弱化 10%。"],
+        ["Hyper Prestige Level, Tetr & Pent scalings are 10% weaker.","转生等级、四重阶层与五重阶层的究极折算弱化 10%。"],
         ["Meta-Rank Boost affects Meta-Tier starting at a reduced rate.","级别元折算加成以削弱的效果延迟阶层的元折算。"],
         ["Uncap Top & Neut-Muon.","移除顶夸克与缪中微子的上限。"],
         ["Uncap [Neut-Muon]’s effect, and it’s better if its effect is greater than 33%.","移除缪中微子效果的上限，且在效果超过 33% 时进一步增强。"],
@@ -990,7 +990,7 @@ to dimensional mass => 维度质量
         ["Uncap bonus fermions from Epsilon Particles.","移除 ε 粒子提供的额外费米子阶层上限。"],
         ["Uncap Bottom.","移除底夸克的上限。"],
         ["Neutronium-0 can affect supernova challenges at a reduced rate.","中子元素（0）以削弱的效果影响超新星挑战。"],
-        ["Super & Hyper prestige levels start +30 later.","转生等级的超级与究级折算延迟 30 级出现。"],
+        ["Super & Hyper prestige levels start +30 later.","转生等级的超级与究极折算延迟 30 级出现。"],
         ["Supernova boosts dark rays earned.","超新星加成暗射线获取。"],
         ["Dark Shadow’s fifth effect also boosts entropy cap at a reduced rate.","黑暗之影的第五个效果以削弱的效果加成熵上限。"],
         ["Exotic rank starts later based on meta-rank starting.","基于级别元折算的起点，延迟级别奇异折算。"],
@@ -1009,7 +1009,7 @@ to dimensional mass => 维度质量
         ["Z0 Boson’s first effect raises tickspeed power at a reduced rate.","Z⁰ 玻色子的第一个效果以削弱的效果指数加成时间速度倍率。"],
         ["Each Matter’s gain is increased by 10% for every OoM^2 of Dark Matter. Unlock more main upgrades.","暗物质每增加一个二重数量级，各物质获取增加 10%。解锁更多主要升级。"],
         ["Hybridized Uran-Astatine’s first effect makes Exotic Rank and Meta-Tier start later at ^0.5 rate.","铀砹混合物的第一个效果以平方根倍率延迟级别奇异折算与阶层元折算。"],
-        ["Keep prestige tiers on darkness. Super and Hyper Prestige Levels start x2 later.","黑暗重置时保留转生等级。转生等级的超级与究级折算延迟 2 倍出现。"],
+        ["Keep prestige tiers on darkness. Super and Hyper Prestige Levels start x2 later.","黑暗重置时保留转生等级。转生等级的超级与究极折算延迟 2 倍出现。"],
         ["Fermium-100 is slightly stronger. Automate each matter’s upgrade.","镄（100Fm）的效果略微增强。自动购买各物质的升级。"],
         ["Add 200 more C13-C14 maximum completions.","挑战 13–14 的次数上限增加 200。"],
         ["Exotic Rank and Ultra Prestige Level scaling are 10% weaker.","级别奇异折算与转生等级超究折算弱化 10%。"],
@@ -1292,7 +1292,7 @@ to dimensional mass => 维度质量
         ["Pion’s third reward is 50% stronger.","π 介子的第三个奖励增强 50%。"],
         ["Supernova divides Corrupted Star upgrade 1 and 2 costs.","超新星降低腐化星辰升级 1 与 2 的花费。"],
         ["Unlock the sixth star generator.","解锁第六个星辰生成器。"],
-        ["Undec 2’s reward now affects Hyper FSS.","十一重阶层 2 的奖励现在影响最终星辰碎片的究级折算。"],
+        ["Undec 2’s reward now affects Hyper FSS.","十一重阶层 2 的奖励现在影响最终星辰碎片的究极折算。"],
         ["Muonic Zirconium-40 is twice as stronger.","缪子锆（40Zr）的效果翻倍。"],
         ["Unstable BH's effect is raised by 10 outside C16.","不稳定黑洞的效果在挑战 16 外变为原来的 10 次方。"],
         ["Unlock sixth star in the theorem.","解锁定理的第六颗星。"],
@@ -1579,11 +1579,11 @@ to dimensional mass => 维度质量
         ["stronger effect's softcap is 10% weaker.","强化器效果的软上限弱化 10%。"],
         ["make rank 380's effect stronger based on tier.","阶层增强级别 380 的效果。"],
         ["Super Tetr scales 5 later.","四重阶层的超级折算延迟 5 级出现。"],
-        ["reduce tier requirements by 25%, and hyper rank scaling is 15% weaker.","阶层需求降低 25%，级别的究级折算弱化 15%。"],
+        ["reduce tier requirements by 25%, and hyper rank scaling is 15% weaker.","阶层需求降低 25%，级别的究极折算弱化 15%。"],
         ["mass upgrade 3 boosts itself.","质量升级 3 加成自身。"],
         ["raise tickspeed effect by 1.05.","时间速度效果变为原来的 1.05 次方。"],
         ["Super rank scaling is weaker based on tier, and super tier scales 20% weaker.","阶层弱化级别的超级折算，阶层的超级折算弱化 20%。"],
-        ["Hyper/Ultra Tickspeed starts later based on tetr.","四重阶层延迟时间速度的究级与超究折算。"],
+        ["Hyper/Ultra Tickspeed starts later based on tetr.","四重阶层延迟时间速度的究极与超究折算。"],
         ["Mass gain softcap^2 starts ^1.5 later.","质量获取的二重软上限延迟 1.5 次方出现。"],
         ["reduce tetr requirements by 15%, and Meta-Rank starts 1.1x later.","四重阶层需求降低 15%，级别的元折算延迟 1.1 倍出现。"],
         ["tetr boosts all radiations gain.","四重阶层加成所有辐射波获取。"],
@@ -1627,7 +1627,7 @@ to dimensional mass => 维度质量
         ["Hybridized Uran-Astatine also applies to pre-Meta pre-Glory at a reduced rate.","铀砹混合物以削弱的效果影响辉煌之前、元折算之前的需求。"],
         ["Exotic supernova starts x1.25 later.","超新星的奇异折算延迟 1.25 倍出现。"],
         ["Chromas gain is increased by prestige base.","转生基础值增加色度获取。"],
-        ["Hyper Hex starts x1.33 later.","六重阶层的究级折算延迟 1.33 倍出现。"],
+        ["Hyper Hex starts x1.33 later.","六重阶层的究极折算延迟 1.33 倍出现。"],
         ["Lithium-3 now provides an exponential boost. Meta-Cosmic Ray scaling starts ^8 later.","锂（3Li）改为提供指数加成。宇宙射线的元折算延迟 8 次方出现。"],
         ["Pre-Quantum Global Speed boosts matter exponent at a reduced rate. Prestige Level 382 is stronger.","量子之前全局速度以削弱的效果增加物质指数。转生等级 382 的奖励增强。"],
         ["All-star resources are squared.","所有星辰资源平方。"],
@@ -1636,7 +1636,7 @@ to dimensional mass => 维度质量
         ["Gain 5 free levels of each Primordium Particle.","各原基粒子获得 5 个免费等级。"],
         ["Pent 5's reward is stronger based on Prestige Base.","转生基础值增强五重阶层 5 的奖励。"],
         ["Quarks are boosted based on Honor.","荣耀加成夸克获取。"],
-        ["Super & Hyper cosmic strings scale weaker based on Honor.","荣耀弱化宇宙弦的超级与究级折算。"],
+        ["Super & Hyper cosmic strings scale weaker based on Honor.","荣耀弱化宇宙弦的超级与究极折算。"],
         ["Raise dark shadow gain by 1.1.","黑暗之影获取变为原来的 1.1 次方。"],
         ["Hybridized Uran-Astatine applies to pre-Meta Pent requirements at a reduced rate.","铀砹混合物以削弱的效果影响元折算之前的五重阶层需求。"],
         ["Add 500 more C13-15 max completions.","挑战 13–15 的次数上限增加 500。"],
@@ -2514,5 +2514,20 @@ Reroll with selected only but with new theorem stars. => 回收选中的定理�
     if (typeof getRankTierName === 'function') {
         for (let i = 9; i < 999; i++) add(getRankTierName(i) + ' => ' + (i + 1) + '重阶层');
     }
+    // Translate complete effects so values can follow their Chinese subjects.
+    add(`
++{0} later to Super Rank starting, {1}% weaker to Super Tickspeed scaling => 级别的超级折算延迟出现：+{0}，时间速度的超级折算削弱{1}%
+Currently: +{0} later to Super Rank starting, {1}% weaker to Super Tickspeed scaling => 当前效果：级别的超级折算延迟出现：+{0}，时间速度的超级折算削弱{1}%
+{0} later to Supercritical Rank & All Fermions starting, {1} weaker to Super Overpower scaling => 级别的超临界折算与所有费米子阶层折算延迟出现：{0}，超强化器的超级折算削弱{1}
+Currently: {0} later to Supercritical Rank & All Fermions starting, {1} weaker to Super Overpower scaling => 当前效果：级别的超临界折算与所有费米子阶层折算延迟出现：{0}，超强化器的超级折算削弱{1}
+`);
     window.IMR_ZH_CN.phrases = Object.entries(window.IMR_ZH_CN.exact);
+    // Standalone labels include “折算”; phrases inside sentences keep their
+    // adjectives so existing full translations do not acquire duplicate suffixes.
+    window.IMR_ZH_CN.scalingLabels = {
+        Super: '超级折算', Hyper: '究极折算', Ultra: '超究折算', Meta: '元折算',
+        Exotic: '奇异折算', Supercritical: '超临界折算', Instant: '即时折算', Mega: '巨级折算',
+    };
+    Object.assign(window.IMR_ZH_CN.exact, window.IMR_ZH_CN.scalingLabels);
+
 })();
