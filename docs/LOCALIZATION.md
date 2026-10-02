@@ -75,4 +75,4 @@ NODE_PATH=/tmp/imr-browser-tools/node_modules node tests/browser-addons.cjs
 python3 local/build-font.py /path/to/NotoSansSC-Regular.otf
 ```
 
-待确认的译名列于 [TRANSLATION-QUESTIONS.md](TRANSLATION-QUESTIONS.md)。它们已采用临时译法，不妨碍继续游戏。
+已确认译名和你的命名意见记录于 [TRANSLATION-QUESTIONS.md](TRANSLATION-QUESTIONS.md)，语言包已按这些选择统一更新。

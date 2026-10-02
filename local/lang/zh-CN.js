@@ -58,8 +58,8 @@ Corrupted Stars => 腐化星辰
 Options => 选项
 Resource Hider => 资源隐藏
 Wormhole => 虫洞
-Protostar => 原恒星
-Protostars => 原恒星
+Protostar => 原初恒星
+Protostars => 原初恒星
 Constellation => 星座
 Upgrades => 升级
 Space => 太空
@@ -69,7 +69,7 @@ Darkness => 黑暗
 Stats => 统计
 Rank => 级别
 Tier => 阶层
-Tetr => 三重阶层
+Tetr => 四重阶层
 Pent => 五重阶层
 Hex => 六重阶层
 Hept => 七重阶层
@@ -88,7 +88,7 @@ Beyond-Ranks => 超越级别
 Muscler => 锻体器
 Booster => 助推器
 Stronger => 强化器
-Overpower => 超强器
+Overpower => 超强化器
 Tickspeed => 时间速度
 Accelerator => 加速器
 Black Hole Condenser => 黑洞压缩器
@@ -161,14 +161,14 @@ Muon-Catalyzed Fusion => 缪子催化聚变
 Stardust => 星尘
 Nebula => 星云
 Nebulae => 星云
-Calm Power => 平静能量
-Fabric => 时空织物
+Calm Power => 宁静能量
+Fabric => 时空纤维
 Apple => 苹果
 Apples => 苹果
 Berry => 浆果
 Berries => 浆果
 Ouroboros => 衔尾蛇
-Ouroboric => 衔尾蛇
+Ouroboric => 衔尾蛇重置
 Ourobrosity => 衔尾蛇
 Ouroborosity => 衔尾蛇
 Evolution => 进化
@@ -187,13 +187,13 @@ Supercritical => 超临界
 Instant => 即时
 Pre-Quantum => 量子之前
 Pre-Infinity => 无限之前
-Pre-Ouroboric => 衔尾蛇之前
+Pre-Ouroboric => 衔尾蛇重置之前
 Red => 红色
 Green => 绿色
 Blue => 蓝色
 Yellow => 黄色
 Orange => 橙色
-Violet => 紫色
+Violet => 紫罗兰色
 White => 白色
 Black => 黑色
 Brown => 棕色
@@ -297,7 +297,7 @@ Join Discord => 加入 Discord
 Back to Normal => 回到正常状态
 Clear glyphs => 清除雕文
 Ratio Mode: => 比例模式：
-Escrow Boosts => 储备加成
+Escrow Boosts => 暂存加成
 Other Resources => 其他资源
 Change Origin => 更换原点
 Merge Rate: => 合并比例：
@@ -411,7 +411,7 @@ Your quark's exponent => 你的夸克指数
 Your quark's exponent is increased by => 你的夸克指数增加了
 You were becomed => 你额外获得了
 more supernovas. => 次超新星。
-Meditate with all Calm Power => 使用全部平静能量进行冥想
+Meditate with all Calm Power => 使用全部宁静能量进行冥想
 1.00x pre-Ourobrosity speed => 1.00 倍衔尾蛇之前全局速度
 of mass gain, mass gain will be softcapped! => 的质量获取时，质量获取将达到软上限！
 of mass gain will softcap^2 mass gain! => 的质量获取时，质量获取将达到二重软上限！
@@ -501,7 +501,7 @@ to blueprint particle => 蓝图粒子
 to dimensional mass => 维度质量
 `);
     for (const [source,target] of [
-        ["The bonus of tickspeed, each mass upgrade (except Overpower) now multiplies its level instead of adding. Dalton Theorem is even stronger.","时间速度及各质量升级（超强器除外）的额外等级改为乘算。道尔顿定理进一步增强。"],
+        ["The bonus of tickspeed, each mass upgrade (except Overpower) now multiplies its level instead of adding. Dalton Theorem is even stronger.","时间速度及各质量升级（超强化器除外）的额外等级改为乘算。道尔顿定理进一步增强。"],
         ["Meta-Fermions start ^2 later.","费米子的元折算延迟 2 次方出现。"],
         ["19th Big Rip upgrade is twice as effective, and remove the overflow from unstable BH's effect.","大撕裂升级 19 的效果翻倍，并移除不稳定黑洞效果的溢出。"],
         ["Kaon & Pion gains are multiplied by 5 every Ascension.","每次飞升使 K 介子和 π 介子获取乘以 5。"],
@@ -514,7 +514,7 @@ to dimensional mass => 维度质量
         ["15th Black Hole upgrade now works like as Atomic Power's effect. The bonus of BHC now multiplies its level instead of adding.","黑洞升级 15 改为使用与原子能量效果相似的公式。黑洞压缩器的额外等级改为乘算。"],
         ["Prestige Base Exponent is doubled. Big Rip Upgrade 19 now affects Renown.","转生基础值的指数翻倍。大撕裂升级 19 现在也影响名誉。"],
         ["Super Infinity Theorem is 10% weaker.","无限定理的超级折算弱化 10%。"],
-        ["Super and Hyper Overpower starts +50 later.","超强器的超级与究级折算延迟 50 级出现。"],
+        ["Super and Hyper Overpower starts +50 later.","超强化器的超级与究级折算延迟 50 级出现。"],
         ["Meta-Prestige Level starts 2x later.","转生等级的元折算延迟 2 倍出现。"],
         ["MCF tier requirements are reduced by 10%.","缪子催化聚变的阶层需求降低 10%。"],
         ["Increase prestige tiers exponent for ascension base by +0.333.","计算飞升基础值时，转生等级的指数增加 0.333。"],
@@ -555,10 +555,10 @@ to dimensional mass => 维度质量
         ["Entering challenge will force an Infinity reset.","进入此挑战会强制进行无限重置。"],
         ["Instant Scale","即时折算"],
         ["Super rank and mass upgrade scaling starts at 25. Also, Super tickspeed starts at 50.","级别和质量升级的超级折算从 25 开始。时间速度的超级折算从 50 开始。"],
-        ["Supercritical Rank & All Fermions Tier scaling starts later, Super Overpower scales weaker based on completions.","基于完成次数，延迟级别超临界折算与所有费米子阶层折算，并弱化超强器的超级折算。"],
+        ["Supercritical Rank & All Fermions Tier scaling starts later, Super Overpower scales weaker based on completions.","基于完成次数，延迟级别超临界折算与所有费米子阶层折算，并弱化超强化器的超级折算。"],
         ["Super Rank starts later, Super Tickspeed scales weaker based on completions.","基于完成次数，延迟级别超级折算并弱化时间速度超级折算。"],
         ["later to Supercritical Rank & All Fermions starting,","使级别超临界折算与所有费米子阶层折算延迟出现，"],
-        ["weaker to Super Overpower scaling","削弱超强器的超级折算"],
+        ["weaker to Super Overpower scaling","削弱超强化器的超级折算"],
         ["later to Super Rank starting,","使级别的超级折算延迟出现，"],
         ["% weaker to Super Tickspeed scaling","% 的时间速度超级折算削弱"],
         ["Anti-Tickspeed","反对时速"],
@@ -581,26 +581,26 @@ to dimensional mass => 维度质量
         ["You cannot {0}.","你无法{0}。"],
         ["Meditate or split Wormhole","冥想或分裂虫洞"],
         ["buy Tickspeed or BH Condenser","购买时间速度或黑洞压缩器"],
-        ["Gain +10% more Fabric per completion.","每次完成使时空织物获取增加 10%。"],
+        ["Gain +10% more Fabric per completion.","每次完成使时空纤维获取增加 10%。"],
         ["Every completion adds 10% to tickspeed and BH condenser power.","每次完成使时间速度与黑洞压缩器倍率增加 10%。"],
         ["No Rage Powers","明镜止水"],
         ["You cannot gain {0}. Instead, {1} are gained from mass at a reduced rate. Additionally, mass gain softcap is stronger.","你无法获取{0}。改为从质量中以削弱的效果获得{1}，并且质量获取的软上限惩罚更强。"],
-        ["calm powers","平静能量"],
+        ["calm powers","宁静能量"],
         ["rage powers","狂怒能量"],
-        ["fabric","时空织物"],
+        ["fabric","时空纤维"],
         ["dark matters","暗物质"],
         ["Pre-Impossible challenges scale weaker by completions, but this reward doesn't affect C7.","基于完成次数，弱化无望之前的挑战折算，但此奖励对挑战 7 无效。"],
         ["Each completion increases challenges 1-4 cap by 2.","每次完成使挑战 1–4 的次数上限增加 2。"],
         ["On 16th completion, unlock Elements","完成 16 次时解锁元素"],
         ["White Hole","宇宙白洞"],
-        ["Fabric & Wormhole masses are square-rooted.","时空织物与虫洞质量开平方根。"],
+        ["Fabric & Wormhole masses are square-rooted.","时空纤维与虫洞质量开平方根。"],
         ["Dark Matter & Mass from Black Hole gains are rooted by 8.","暗物质与黑洞质量获取开 8 次方根。"],
-        ["Gain +20% more Fabric per completion.","每次完成使时空织物获取增加 20%。"],
+        ["Gain +20% more Fabric per completion.","每次完成使时空纤维获取增加 20%。"],
         ["Dark Matter & Mass from Black Hole gains are raised by completions.","基于完成次数，以指数加成暗物质与黑洞质量获取。"],
         ["On first completion, unlock 3 rows of Elements","首次完成时解锁前三行元素"],
         ["No Particles","粒子消失"],
         ["You cannot assign quarks. Additionally, mass gains exponent is raised to 0.9th power.","你无法分配夸克，质量获取的指数变为原来的 0.9 次方。"],
-        ["Gain +10% more protostars per completion.","每次完成使原恒星获取增加 10%。"],
+        ["Gain +10% more protostars per completion.","每次完成使原初恒星获取增加 10%。"],
         ["Improve Magnesium-12.","增强镁（12Mg）的效果。"],
         ["The Reality I","现实 I"],
         ["You are trapped in mass dilation and challenges 1-8.","你被困在质量膨胀与挑战 1–8 中。"],
@@ -711,9 +711,9 @@ to dimensional mass => 维度质量
         ["Hyper Tickspeed starts 50 later.","时间速度的究级折算延迟 50 级出现。"],
         ["Mass boosts Atom gain.","质量加成原子获取。"],
         ["Remove tickspeed power's softcap.","移除时间速度倍率的软上限。"],
-        ["Overpower power is increased by 0.005.","超强器倍率增加 0.005。"],
+        ["Overpower power is increased by 0.005.","超强化器倍率增加 0.005。"],
         ["Fading matter's upgrade applies to rage powers gain at a reduce rate.","衰减物质的升级以削弱的效果影响狂怒能量获取。"],
-        ["Supernovas boost overpower power.","超新星加成超强器倍率。"],
+        ["Supernovas boost overpower power.","超新星加成超强化器倍率。"],
         ["Corrupted Shards boost normal mass gain.","腐化碎片加成普通质量获取。"],
         ["Rage powers boost dark rays gain.","狂怒能量加成暗射线获取。"],
         ["Rank Collapse starts later based on rage powers at an extremely reduced rate.","狂怒能量以极低的效果延迟级别坍缩。"],
@@ -737,7 +737,7 @@ to dimensional mass => 维度质量
         ["Neutron Powers boost mass of Black Hole gain.","中子能量加成黑洞质量获取。"],
         ["Atomic Powers add Black Hole Condensers at a reduced rate.","原子能量以削弱的效果提供额外黑洞压缩器。"],
         ["Red matter's upgrade applies to mass gain at a reduced rate.","红色物质的升级以削弱的效果影响质量获取。"],
-        ["Violet matter's upgrade applies to collapsed stars at a reduced rate.","紫色物质的升级以削弱的效果影响坍缩星辰。"],
+        ["Violet matter's upgrade applies to collapsed stars at a reduced rate.","紫罗兰色物质的升级以削弱的效果影响坍缩星辰。"],
         ["Make black hole's effect stronger.","增强黑洞效果。"],
         ["Mass of black hole boosts accelerator power at an extremely reduced rate.","黑洞质量以极低的效果加成加速器倍率。"],
         ["Corrupted Shards boost mass of black hole gain.","腐化碎片加成黑洞质量获取。"],
@@ -748,9 +748,9 @@ to dimensional mass => 维度质量
         ["Atom Upgrades","原子升级"],
         ["Start with Mass upgrades unlocked.","开局即解锁质量升级。"],
         ["You can automatically buy BH Condenser and upgrades. Tickspeed no longer spends Rage Powers.","自动购买黑洞压缩器及黑洞升级。时间速度不再消耗狂怒能量。"],
-        ["[Tetr Era] Unlock Tetr.","[三重时代] 解锁三重阶层。"],
+        ["[Tetr Era] Unlock Tetr.","[四重时代] 解锁四重阶层。"],
         ["Keep challenges 1-4 on reset. BH Condensers add Cosmic Rays Power at a reduced rate.","重置时保留挑战 1–4。黑洞压缩器以削弱的效果增加宇宙射线倍率。"],
-        ["You can automatically Tetr up. Super Tier starts 10 later.","自动提升三重阶层。阶层的超级折算延迟 10 级出现。"],
+        ["You can automatically Tetr up. Super Tier starts 10 later.","自动提升四重阶层。阶层的超级折算延迟 10 级出现。"],
         ["Gain 100% of Dark Matters gained from reset per second. {0} based on Atomic Powers.","每秒获取重置时可获得暗物质的 100%。基于原子能量，{0}。"],
         ["Increase Wormhole loselessness","提高虫洞的无损程度"],
         ["Mass gain from Black Hole softcap starts later","延迟黑洞质量获取的软上限"],
@@ -768,7 +768,7 @@ to dimensional mass => 维度质量
         ["Pink matter's upgrade applies to quark gain at a reduced rate.","粉色物质的升级以削弱的效果影响夸克获取。"],
         ["Neutron Power's second effect now provides an expontial boost and applies to mass of black hole.","中子的第二个效果改为指数加成，并作用于黑洞质量。"],
         ["Yellow matter's upgrade applies to dilated mass overflow at a reduced rate.","黄色物质的升级以削弱的效果延迟膨胀质量溢出。"],
-        ["Atomic Powers add Overpowers at an extremely reduced rate.","原子能量以极低的效果提供额外超强器。"],
+        ["Atomic Powers add Overpowers at an extremely reduced rate.","原子能量以极低的效果提供额外超强化器。"],
         ["The exponent of any particle powers is raised by 5.","各粒子能量的指数变为原来的 5 次方。"],
         ["Remove the softcaps of Star Booster's power and effect.","移除星辰助推器倍率与效果的软上限。"],
         ["Atom Upgrade 20 is slightly stronger.","原子升级 20 略微增强。"],
@@ -811,7 +811,7 @@ to dimensional mass => 维度质量
         ["Gain 1% more quarks for each challenge completion.","每次挑战完成使夸克获取增加 1%。"],
         ["Carbon's effect is now multiplied by the number of elements bought.","碳的效果乘以已购买的元素数量。"],
         ["C2's reward's softcap is 75% weaker.","挑战 2 奖励的软上限弱化 75%。"],
-        ["Tetr's requirement is 15% weaker.","三重阶层需求降低 15%。"],
+        ["Tetr's requirement is 15% weaker.","四重阶层需求降低 15%。"],
         ["3rd & 4th challenges' scalings are weaker.","弱化挑战 3 与 4 的折算。"],
         ["Nitrogen's multiplier is squared.","氮的倍率变为原来的平方。"],
         ["Power's gain from each particle formula is better.","改善各粒子的能量获取公式。"],
@@ -839,7 +839,7 @@ to dimensional mass => 维度质量
         ["Rage power boosts Relativistic particles gain.","狂怒能量加成相对论粒子获取。"],
         ["Mass from Black Hole boosts dilated mass gain.","黑洞质量加成膨胀质量获取。"],
         ["Unlock Stars.","解锁星辰。"],
-        ["Super Tier scales weaker based on Tetr.","三重阶层弱化阶层的超级折算。"],
+        ["Super Tier scales weaker based on Tetr.","四重阶层弱化阶层的超级折算。"],
         ["Cosmic Ray's free tickspeeds now add to RU7.","宇宙射线提供的免费时间速度等级现在也加成狂怒升级 7。"],
         ["to Rage Power Upgrade 7","的狂怒升级 7 加成"],
         ["Remove softcap from C2 & C6 effects.","移除挑战 2 与 6 效果的软上限。"],
@@ -847,7 +847,7 @@ to dimensional mass => 维度质量
         ["Add 50 more C7 maximum completions.","挑战 7 的次数上限增加 50。"],
         ["Collapsed stars boost quark gain.","坍缩星辰加成夸克获取。"],
         ["You automatically buy mass dilation upgrades if you purchased them first. They no longer spend dilated mass.","自动购买已经手动购买过的质量膨胀升级，且不再消耗膨胀质量。"],
-        ["The Tetr requirement is broken.","大幅降低三重阶层的需求。"],
+        ["The Tetr requirement is broken.","大幅降低四重阶层的需求。"],
         ["Collapsed star boosts relativistic particles gain.","坍缩星辰加成相对论粒子获取。"],
         ["Collapsed star's effect boosts mass of black hole gain at a reduced rate.","坍缩星辰效果以削弱的倍率加成黑洞质量获取。"],
         ["Quarks gain is raised to the 1.05th power.","夸克获取变为原来的 1.05 次方。"],
@@ -876,11 +876,11 @@ to dimensional mass => 维度质量
         ["Collapsed stars boost quarks gain.","坍缩星辰加成夸克获取。"],
         ["Meta-Tickspeed starts 2x later.","时间速度的元折算延迟 2 倍出现。"],
         ["Pent is now added in mass gain formula from collapsed stars.","坍缩星辰的质量获取公式现在计入五重阶层。"],
-        ["Raise Fabric by +^0.05.","时空织物的指数增加 0.05。"],
+        ["Raise Fabric by +^0.05.","时空纤维的指数增加 0.05。"],
         ["BH formula softcap starts laster based on Supernovas.","超新星延迟黑洞公式的软上限。"],
-        ["Tetrs are 15% cheaper.","三重阶层需求降低 15%。"],
+        ["Tetrs are 15% cheaper.","四重阶层需求降低 15%。"],
         ["Add more C5-6 & C8 maximum completions based on Supernovas.","基于超新星，增加挑战 5、6 与 8 的次数上限。"],
-        ["Super Tetr scales 25% weaker.","三重阶层的超级折算弱化 25%。"],
+        ["Super Tetr scales 25% weaker.","四重阶层的超级折算弱化 25%。"],
         ["Remove 2 softcaps from Atomic Power's effect.","移除原子能量效果的两个软上限。"],
         ["Collapsed Star's effect is 25% stronger.","坍缩星辰效果增强 25%。"],
         ["Mass softcap^3 is 17.5% weaker.","质量获取的三重软上限弱化 17.5%。"],
@@ -930,7 +930,7 @@ to dimensional mass => 维度质量
         ["Insane & Impossible Challenges scale 50% weaker.","疯狂与无望挑战的折算弱化 50%。"],
         ["You can buy Cerium-58 in big rip.","允许在大撕裂中购买铈（58Ce）。"],
         ["You can now automatically complete Challenges 9-11. Keep Challenge 12 completions on Big Rip or start QC.","自动完成挑战 9–11。在大撕裂或开启量子挑战时保留挑战 12 的完成次数。"],
-        ["Death shards boost protostars gain.","死寂碎片加成原恒星获取。"],
+        ["Death shards boost protostars gain.","死寂碎片加成原初恒星获取。"],
         ["You can now automatically buy break dilation upgrades. They no longer spent relativistic mass.","自动购买撕裂膨胀升级，且不再消耗相对论质量。"],
         ["Keep quantum tree on darkness.","黑暗重置时保留量子树。"],
         ["Improve the Wormhole.","增强虫洞。"],
@@ -966,11 +966,11 @@ to dimensional mass => 维度质量
         ["Add 75 more C13 maximum completions.","挑战 13 的次数上限增加 75。"],
         ["Boost Dark Ray gain based on quarks.","夸克加成暗射线获取。"],
         ["Prestige base exponent boosts Abyssal Blot gain.","转生基础值的指数加成深渊之渍获取。"],
-        ["Hyper Prestige Level, Tetr & Pent scalings are 10% weaker.","转生等级、三重阶层与五重阶层的究级折算弱化 10%。"],
+        ["Hyper Prestige Level, Tetr & Pent scalings are 10% weaker.","转生等级、四重阶层与五重阶层的究级折算弱化 10%。"],
         ["Meta-Rank Boost affects Meta-Tier starting at a reduced rate.","级别元折算加成以削弱的效果延迟阶层的元折算。"],
         ["Uncap Top & Neut-Muon.","移除顶夸克与缪中微子的上限。"],
         ["Uncap [Neut-Muon]’s effect, and it’s better if its effect is greater than 33%.","移除缪中微子效果的上限，且在效果超过 33% 时进一步增强。"],
-        ["Fabric boosts Wormhole more.","时空织物进一步加成虫洞。"],
+        ["Fabric boosts Wormhole more.","时空纤维进一步加成虫洞。"],
         ["Raise Meditation' level to the 1.5th power.","冥想等级变为原来的 1.5 次方。"],
         ["Meta-Tickspeed scaling starts ^2 later.","时间速度的元折算延迟 2 次方出现。"],
         ["Abyssal Blot’s second effect applies to mass gain’s softcap^7-8, they are 20% weaker.","深渊之渍的第二个效果影响质量获取的七重与八重软上限，使它们弱化 20%。"],
@@ -983,7 +983,7 @@ to dimensional mass => 维度质量
         ["[bh1]’s effect is overpowered for the third time.","[bh1] 的效果第三次大幅增强。"],
         ["Hex’s requirement and Glory’s requirement are slightly weaker.","六重阶层与辉煌的需求略微降低。"],
         ["Unlock the 15th Challenge.","解锁挑战 15。"],
-        ["+^0.05 to Protostars. Nebulae Tier 1 work in Big Rip.","原恒星的指数增加 0.05。第一阶星云在大撕裂中生效。"],
+        ["+^0.05 to Protostars. Nebulae Tier 1 work in Big Rip.","原初恒星的指数增加 0.05。第一阶星云在大撕裂中生效。"],
         ["Remove two softcaps of particle powers gain.","移除粒子能量获取的两个软上限。"],
         ["Collapsed star’s effect is even better.","坍缩星辰效果进一步增强。"],
         ["Add 100 more C13-C14 maximum completions.","挑战 13–14 的次数上限增加 100。"],
@@ -1021,14 +1021,14 @@ to dimensional mass => 维度质量
         ["Unlock the fourth mass upgrade which raises Stronger.","解锁第四个质量升级，对强化器提供指数加成。"],
         ["Booster boosts its effect.","助推器加成自身效果。"],
         ["1st and 3rd Photon & Gluon upgrades provide an exponential boost. Keep big rip upgrades on darkness.","光子与胶子升级 1、3 改为提供指数加成。黑暗重置时保留大撕裂升级。"],
-        ["Overpower boosts accelerator power at a reduced rate.","超强器以削弱的效果加成加速器倍率。"],
+        ["Overpower boosts accelerator power at a reduced rate.","超强化器以削弱的效果加成加速器倍率。"],
         ["Dark matter boosts matter exponent.","暗物质增加物质指数。"],
         ["Hybridized Uran-Astatine’s second effect applies to hex scalings. It is stronger.","铀砹混合物的第二个效果影响六重阶层折算，并且增强。"],
         ["Unlock Beyond-Ranks.","解锁超越级别。"],
         ["Muscler boosts its effect.","锻体器加成自身效果。"],
         ["Stronger overflow starts later based on FSS.","最终星辰碎片延迟强化器溢出。"],
-        ["You can buy protostar elements during Big Rip.","允许在大撕裂中购买原恒星元素。"],
-        ["Meta-Rank Boost also affects Meta-Tetr starting at a reduced rate, strengthen Unpentpentium-155.","级别元折算加成也以削弱的效果影响三重阶层元折算的起点，并增强元素 155。"],
+        ["You can buy protostar elements during Big Rip.","允许在大撕裂中购买原初恒星元素。"],
+        ["Meta-Rank Boost also affects Meta-Tetr starting at a reduced rate, strengthen Unpentpentium-155.","级别元折算加成也以削弱的效果影响四重阶层元折算的起点，并增强元素 155。"],
         ["Exotic supernova scales 25% weaker.","超新星的奇异折算弱化 25%。"],
         ["[Bottom]’s effect is now better, and is uncapped. Additionally, the Fourth Photon upgrade now provides an exponential boost.","底夸克效果增强并移除上限。光子升级 4 改为提供指数加成。"],
         ["Entropic Multiplier is overpowered.","熵倍率大幅增强。"],
@@ -1108,19 +1108,19 @@ to dimensional mass => 维度质量
         ["Challenge 5’s reward is twice as stronger.","挑战 5 的奖励翻倍。"],
         ["Dimensional Mass’s effect is even stronger.","维度质量效果进一步增强。"],
         ["Unlock 20th Challenge.","解锁挑战 20。"],
-        ["Stardust boosts Protostars at a reduced rate.","星尘以削弱的效果加成原恒星。"],
-        ["Wormhole affects Protostars slightly.","虫洞略微加成原恒星。"],
+        ["Stardust boosts Protostars at a reduced rate.","星尘以削弱的效果加成原初恒星。"],
+        ["Wormhole affects Protostars slightly.","虫洞略微加成原初恒星。"],
         ["Automatically assign all normal nebulae.","自动分配所有普通星云。"],
         ["Nebulae Tier 1 are better. Raise neutron stars gain to the 1.5th power.","第一阶星云增强。中子星获取变为原来的 1.5 次方。"],
         ["Quarks raise normal mass slightly.","夸克对普通质量提供少量指数加成。"],
         ["Dark Shadow’s second reward is better.","增强黑暗之影的第二个奖励。"],
-        ["Collapsed stars boost protostars gain.","坍缩星辰加成原恒星获取。"],
-        ["Protostars boost Exotic Atoms slightly.","原恒星略微加成奇异原子。"],
-        ["The softcap of quark’s formula from protostars is weaker.","原恒星提供的夸克公式软上限弱化。"],
+        ["Collapsed stars boost protostars gain.","坍缩星辰加成原初恒星获取。"],
+        ["Protostars boost Exotic Atoms slightly.","原初恒星略微加成奇异原子。"],
+        ["The softcap of quark’s formula from protostars is weaker.","原初恒星提供的夸克公式软上限弱化。"],
         ["FSS raises the speed and the starting reduction of corrupted star at a reduced rate.","最终星辰碎片以削弱的效果指数加成腐化星辰速度与削减起点。"],
         ["Yellow and cyan nebulae have a second effect that provides a super-exponential boost slightly.","黄色与青色星云获得第二个效果，提供少量超指数加成。"],
         ["Exotic II Nebulae boost infinity points gain.","奇异 II 星云加成无限点数获取。"],
-        ["Anti-wormhole boosts protostars slightly.","反虫洞略微加成原恒星。"],
+        ["Anti-wormhole boosts protostars slightly.","反虫洞略微加成原初恒星。"],
         ["Stardust boosts supernova generation.","星尘加成超新星生成。"],
         ["Quarks in Big Rip","大撕裂中的夸克"],
         ["Ripped","撕裂"],
@@ -1130,7 +1130,7 @@ to dimensional mass => 维度质量
         ["Infinity","无限"],
         ["Corrupted","腐化"],
         ["Berry","浆果"],
-        ["Proto","原恒星"],
+        ["Proto","原初恒星"],
         ["Normal","普通"],
         ["Muonic","缪子"],
         ["Placeholder.","待添加。"],
@@ -1147,13 +1147,13 @@ to dimensional mass => 维度质量
         ["Unstable Black Hole's effect is 50% stronger. (after overflow)","不稳定黑洞效果增强 50%（在溢出之后生效）。"],
         ["Remove all pre-Meta scalings from Supernova. [Neut-Muon]'s effect is now changed. Denullify C5's effect, but it's changed.","移除超新星在元之前的所有折算。改变缪中微子的效果。恢复挑战 5 的效果，但改变其公式。"],
         ["Dark Shadow's first reward is overpowered. Remove all scalings from Tickspeed, but nullify [Tau]'s effect.","黑暗之影的第一个奖励大幅增强。移除时间速度的所有折算，但陶子效果失效。"],
-        ["Unlock Exotic Protostars.","解锁奇异原恒星。"],
+        ["Unlock Exotic Protostars.","解锁奇异原初恒星。"],
         ["Unlock Exotic Atoms in Atom tab, and unlock new elements' layer.","在原子标签页解锁奇异原子，并解锁新的元素层。"],
         ["Corrupted Shards formula is better. Triple Anti-Wormhole.","改善腐化碎片公式。反虫洞效果变为原来的 3 倍。"],
         ["Remove all scalings from BHC. [Neut-Tau]'s effect no longer affects BHC's cheapness. In C16, BHC is 1,000,000x cheaper.","移除黑洞压缩器的所有折算。陶中微子不再降低黑洞压缩器花费。挑战 16 内黑洞压缩器花费降低至原来的百万分之一。"],
         ["Muon-Catalyzed Fusion Tier weakens Mass Upgrade scalings. In C16, this weakens Extreme Scaling too.","缪子催化聚变阶层弱化质量升级折算。在挑战 16 内还会弱化极端折算。"],
         ["Remove all scalings from Cosmic Ray. [Neut-Tau]'s effect now re-affects BHC's cheapness, but its effect is MASSIVELY weaker.","移除宇宙射线的所有折算。陶中微子重新降低黑洞压缩器花费，但效果大幅削弱。"],
-        ["Remove all scalings from Tetr. However, Hybridized Uran-Astatine's first effect no longer affects it. Tetr is 500x cheaper in C16.","移除三重阶层的所有折算，但铀砹混合物的第一个效果不再影响它。挑战 16 内三重阶层需求降低至原来的 1/500。"],
+        ["Remove all scalings from Tetr. However, Hybridized Uran-Astatine's first effect no longer affects it. Tetr is 500x cheaper in C16.","移除四重阶层的所有折算，但铀砹混合物的第一个效果不再影响它。挑战 16 内四重阶层需求降低至原来的 1/500。"],
         ["De-corrupt 40th, 64th, 67th, 150th, 199th, 200th, and 204th elements.","解除元素 40、64、67、150、199、200 与 204 的腐化。"],
         ["Requires:","需要："],
         ["of black hole.","的黑洞质量。"],
@@ -1192,8 +1192,8 @@ to dimensional mass => 维度质量
         ["Reduce the exponent of normal mass’s multiplier, multiplier from mass of black hole by","将普通质量倍率的指数与黑洞质量的倍率削减"],
         ["in dark run.","（在黑暗狂奔中）。"],
         ["Earn more glyphs based on normal mass.","基于普通质量，获得更多雕文。"],
-        ["Reduce Calm Power and Fabric by","将平静能量与时空织物削减"],
-        ["Earn more glyphs based on Fabric.","基于时空织物，获得更多雕文。"],
+        ["Reduce Calm Power and Fabric by","将宁静能量与时空纤维削减"],
+        ["Earn more glyphs based on Fabric.","基于时空纤维，获得更多雕文。"],
         ["Reduce the exponent of dark matter’s multiplier, rage power’s multiplier by","将暗物质倍率与狂怒能量倍率的指数削减"],
         ["Earn more glyphs based on mass of black hole.","基于黑洞质量，获得更多雕文。"],
         ["Reduce the exponent of atom, atomic power and quark multiplier by","将原子、原子能量与夸克倍率的指数削减"],
@@ -1304,27 +1304,27 @@ to dimensional mass => 维度质量
         ["The growth reductions of corrupted stars start later based on Normal Energy.","普通能量延迟腐化星辰的增长削减。"],
         ["Unlock the eighth star generator.","解锁第八个星辰生成器。"],
         ["Add new meditation’s effect.","为冥想增加新效果。"],
-        ["Calm Power boosts Apples & Strawberries.","平静能量加成苹果与草莓获取。"],
+        ["Calm Power boosts Apples & Strawberries.","宁静能量加成苹果与草莓获取。"],
         ["to Apples,","的苹果加成，"],
         ["to Strawberries","的草莓加成"],
         ["Add new another meditation’s effect.","为冥想再增加一个效果。"],
-        ["Automate Meditation. Keep meditation on all pre-Ouroboric resets.","自动冥想。在所有衔尾蛇之前的重置中保留冥想。"],
+        ["Automate Meditation. Keep meditation on all pre-Ouroboric resets.","自动冥想。在所有早于衔尾蛇重置的重置中保留冥想。"],
         ["Double Apples and Strawberries.","苹果与草莓获取翻倍。"],
-        ["Tetr boosts Calm Power.","三重阶层加成平静能量。"],
+        ["Tetr boosts Calm Power.","四重阶层加成宁静能量。"],
         ["Improve 3rd Meditation effect base.","改善冥想第三个效果的底数。"],
         ["Improve 2nd Apple effect.","增强苹果的第二个效果。"],
         ["Unlock 4th Meditation effect.","解锁冥想的第四个效果。"],
         ["Unlock 5th Meditation effect.","解锁冥想的第五个效果。"],
-        ["Raise Fabric from ^0.5 to ^0.6.","时空织物的指数从 0.5 提升至 0.6。"],
-        ["Raise Fabric by +^0.1.","时空织物的指数增加 0.1。"],
+        ["Raise Fabric from ^0.5 to ^0.6.","时空纤维的指数从 0.5 提升至 0.6。"],
+        ["Raise Fabric by +^0.1.","时空纤维的指数增加 0.1。"],
         ["+4 maximum spawn cap if you don't have an Aim powerup.","没有瞄准能力时，最大生成数量增加 4。"],
         ["Challenge 6 and 8 effects are exponential. Automate Wormhole.","挑战 6 与 8 的效果改为指数加成。自动操作虫洞。"],
         ["Double Snake Powerup chance. Increase powerup time to 30s.","贪吃蛇强化道具的出现概率翻倍。道具持续时间增加至 30 秒。"],
         ["Increase base moves until reduction by +5. Gain more Apples on snake length.","开始削减前的基础移动次数增加 5。蛇的长度增加苹果获取。"],
         ["Purify luck is better based on snake length.","蛇的长度增强净化运气。"],
-        ["+0.25 to the exponent of quark's formula from protostars.","原恒星提供的夸克公式指数增加 0.25。"],
+        ["+0.25 to the exponent of quark's formula from protostars.","原初恒星提供的夸克公式指数增加 0.25。"],
         ["Apple's first effect now provides an exponential boost.","苹果的第一个效果改为提供指数加成。"],
-        ["+0.1 to the exponent of quark's formula from protostars.","原恒星提供的夸克公式指数增加 0.1。"],
+        ["+0.1 to the exponent of quark's formula from protostars.","原初恒星提供的夸克公式指数增加 0.1。"],
         ["Snake enemies lose slower. (+2 moves per reduction)","敌蛇损失更慢（每次削减前多移动 2 步）。"],
         ["Triple Anti-Wormhole Mass.","反虫洞质量变为原来的 3 倍。"],
         ["Raise Apples by ^1.1.","苹果获取变为原来的 1.1 次方。"],
@@ -1376,15 +1376,15 @@ to dimensional mass => 维度质量
         ["Dalton Theorem","道尔顿定理"],
         ["Boost quarks gain.","加成夸克获取。"],
         ["Boost quark & atomic power overflows starting.","延迟夸克与原子能量溢出。"],
-        ["Increase overpower's power.","增加超强器倍率。"],
+        ["Increase overpower's power.","增加超强化器倍率。"],
         ["Gain more meditation.","获得更多冥想等级。"],
         ["Increase accelerator's power.","增加加速器倍率。"],
         ["Boost Exotic Atom gain.","加成奇异原子获取。"],
-        ["Boost protostars gain.","加成原恒星获取。"],
+        ["Boost protostars gain.","加成原初恒星获取。"],
         ["Boost dilated mass gain.","加成膨胀质量获取。"],
         ["Gain more Stardust.","获得更多星尘。"],
         ["Boost kaon & pion gains by","使 K 介子与 π 介子获取乘以"],
-        ["Protoversal Theorem","原宇宙定理"],
+        ["Protoversal Theorem","原初宇宙定理"],
         ["Make cosmic string cheaper.","降低宇宙弦花费。"],
         ["Strengthen primordium particles.","增强原基粒子。"],
         ["Weaken each “entropic” reward scaling.","弱化各类熵奖励的折算。"],
@@ -1398,7 +1398,7 @@ to dimensional mass => 维度质量
         ["Boost pre-quantum global speed.","加成量子之前全局速度。"],
         ["Boost dark shadow & abyssal blot gains.","加成黑暗之影与深渊之渍获取。"],
         ["Weaken each glyphic mass nerfing.","弱化各雕文质量的削弱惩罚。"],
-        ["Boost the softcap of quark's formula from protostars starting.","延迟原恒星提供的夸克公式软上限。"],
+        ["Boost the softcap of quark's formula from protostars starting.","延迟原初恒星提供的夸克公式软上限。"],
         ["Boost Exotic Atom Reward Strength.","增强奇异原子奖励强度。"],
         ["Boost supernova generation.","加成超新星生成。"],
         ["Cheapen FSS.","降低最终星辰碎片需求。"],
@@ -1432,7 +1432,7 @@ to dimensional mass => 维度质量
         ["to normal mass","的普通质量加成"],
         ["to BH mass","的黑洞质量加成"],
         ["Legacy Mass Upgrade 4","传承质量升级 4"],
-        ["Start with overpower unlocked, its starting cost is massively decreased (likewise, start with Binilbium-202 unlocked).","开局即解锁超强器，大幅降低其初始花费（同时解锁元素 202）。"],
+        ["Start with overpower unlocked, its starting cost is massively decreased (likewise, start with Binilbium-202 unlocked).","开局即解锁超强化器，大幅降低其初始花费（同时解锁元素 202）。"],
         ["Dark Rest","黑暗休憩"],
         ["Keep glyph upgrades on infinity (likewise, start with Unhexunium-161 unlocked).","无限重置时保留雕文升级（同时解锁元素 161）。"],
         ["Tree Automation","升级树自动化"],
@@ -1486,13 +1486,13 @@ to dimensional mass => 维度质量
         ["Level {0} / {1}","等级 {0} / {1}"],
         ["Rage ➜ Calm","狂怒 ➜ 平静"],
         ["Break the madness of Infinity. Reincarnate as a serpent.","打破无限的疯狂，转生为蛇。"],
-        ["Dark Matter ➜ Fabric","暗物质 ➜ 时空织物"],
+        ["Dark Matter ➜ Fabric","暗物质 ➜ 时空纤维"],
         ["Evaporate what causes destruction. Black Hole.","蒸发造成毁灭的黑洞。"],
-        ["Atoms ➜ Protostars","原子 ➜ 原恒星"],
+        ["Atoms ➜ Protostars","原子 ➜ 原初恒星"],
         ["The first glimpses of shattering, all starts small.","破碎的第一缕曙光，一切始于微小。"],
         ["Supernova ➜ Constellation","超新星 ➜ 星座"],
         ["No longer exploding, now start exploring.","不再爆发，开始探索。"],
-        ["Meditate with all Calm Power.","使用全部平静能量进行冥想。"],
+        ["Meditate with all Calm Power.","使用全部宁静能量进行冥想。"],
         ["Level: {0}","等级：{0}"],
         ["{2} to Muscler's power.","锻体器倍率增加 {2}。"],
         ["{0} to Booster's power","助推器倍率增加 {0}"],
@@ -1503,11 +1503,11 @@ to dimensional mass => 维度质量
         ["| Moves without Feeding:","| 未进食移动次数："],
         ["| Powerup:","| 强化道具："],
         ["{0} to normal mass","{0} 的普通质量加成"],
-        ["{0} to Calm Powers","{0} 的平静能量加成"],
+        ["{0} to Calm Powers","{0} 的宁静能量加成"],
         ["{0} to Meditation levels","{0} 的冥想等级加成"],
-        ["{0} to Fabrics","{0} 的时空织物加成"],
+        ["{0} to Fabrics","{0} 的时空纤维加成"],
         ["{0} to Wormhole's lossless-ness","{0} 的虫洞无损程度加成"],
-        ["{0} to Protostars","{0} 的原恒星加成"],
+        ["{0} to Protostars","{0} 的原初恒星加成"],
         ["{0} to Nebulae diminishing returns","{0} 的星云边际收益加成"],
         ["{0} to Dark Rays","{0} 的暗射线加成"],
         ["{0} to Mass Glyphs","{0} 的质量雕文加成"],
@@ -1524,7 +1524,7 @@ to dimensional mass => 维度质量
         ["green and blue","绿色与蓝色"],
         ["Stronger Power","强化器倍率"],
         ["red and blue","红色与蓝色"],
-        ["Calm Power","平静能量"],
+        ["Calm Power","宁静能量"],
         ["red and green","红色与绿色"],
         ["Exotic I","奇异 I"],
         ["corrupted shards and exotic atoms","腐化碎片与奇异原子"],
@@ -1545,9 +1545,9 @@ to dimensional mass => 维度质量
         ["merge with #","合并至 #"],
         ["Boost meditation levels by","使冥想等级乘以"],
         ["Boost {0}'s power by","使 {0} 倍率乘以"],
-        ["Gain more Calm Power.","获得更多平静能量。"],
+        ["Gain more Calm Power.","获得更多宁静能量。"],
         ["Reduce Meditation's softcap weakness","降低冥想软上限的削弱程度"],
-        ["Raise Fabric.","指数加成时空织物。"],
+        ["Raise Fabric.","指数加成时空纤维。"],
         ["Raise meditation levels.","指数加成冥想等级。"],
         ["Raise Wormhole formula.","提高虫洞公式指数。"],
         ["^{0} to exponent","指数增加 {0}"]
@@ -1578,15 +1578,15 @@ to dimensional mass => 维度质量
         ["Tier 4's reward is twice as effective and the softcap is removed.","阶层 4 的奖励翻倍，并移除软上限。"],
         ["stronger effect's softcap is 10% weaker.","强化器效果的软上限弱化 10%。"],
         ["make rank 380's effect stronger based on tier.","阶层增强级别 380 的效果。"],
-        ["Super Tetr scales 5 later.","三重阶层的超级折算延迟 5 级出现。"],
+        ["Super Tetr scales 5 later.","四重阶层的超级折算延迟 5 级出现。"],
         ["reduce tier requirements by 25%, and hyper rank scaling is 15% weaker.","阶层需求降低 25%，级别的究级折算弱化 15%。"],
         ["mass upgrade 3 boosts itself.","质量升级 3 加成自身。"],
         ["raise tickspeed effect by 1.05.","时间速度效果变为原来的 1.05 次方。"],
         ["Super rank scaling is weaker based on tier, and super tier scales 20% weaker.","阶层弱化级别的超级折算，阶层的超级折算弱化 20%。"],
-        ["Hyper/Ultra Tickspeed starts later based on tetr.","三重阶层延迟时间速度的究级与超究折算。"],
+        ["Hyper/Ultra Tickspeed starts later based on tetr.","四重阶层延迟时间速度的究级与超究折算。"],
         ["Mass gain softcap^2 starts ^1.5 later.","质量获取的二重软上限延迟 1.5 次方出现。"],
-        ["reduce tetr requirements by 15%, and Meta-Rank starts 1.1x later.","三重阶层需求降低 15%，级别的元折算延迟 1.1 倍出现。"],
-        ["tetr boosts all radiations gain.","三重阶层加成所有辐射波获取。"],
+        ["reduce tetr requirements by 15%, and Meta-Rank starts 1.1x later.","四重阶层需求降低 15%，级别的元折算延迟 1.1 倍出现。"],
+        ["tetr boosts all radiations gain.","四重阶层加成所有辐射波获取。"],
         ["Meta-Tickspeeds start later based on Supernovas.","超新星延迟时间速度的元折算。"],
         ["Meta-Ranks start later based on Pent.","五重阶层延迟级别的元折算。"],
         ["Mass gain softcap^4 starts later based on Pent.","五重阶层延迟质量获取的四重软上限。"],
@@ -1612,7 +1612,7 @@ to dimensional mass => 维度质量
         ["Mass softcap^5 starts later based on Prestige.","转生等级延迟质量的五重软上限。"],
         ["Gain more Relativistic Energy based on Prestige.","转生等级加成相对论能量获取。"],
         ["Stronger Effect's softcap^2 is 7.04% weaker.","强化器效果的二重软上限弱化 7.04%。"],
-        ["Tetr 2's reward is overpowered.","三重阶层 2 的奖励大幅增强。"],
+        ["Tetr 2's reward is overpowered.","四重阶层 2 的奖励大幅增强。"],
         ["Rank’s effect on Prestige Base is doubled.","计算转生基础值时，级别的效果翻倍。"],
         ["Super Cosmic Strings scale 20% weaker.","宇宙弦的超级折算弱化 20%。"],
         ["Remove all softcaps from Gluon Upgrade 4's effect.","移除胶子升级 4 效果的所有软上限。"],
@@ -1743,20 +1743,20 @@ to dimensional mass => 维度质量
         ["Reach {0} without buying Tickspeed in a Supernova run. You can still obtain Tickspeed from Cosmic Rays.","在一次超新星流程中，不购买时间速度达到 {0}。仍可从宇宙射线中获得时间速度。"],
         ["Tickspeed Power is raised to the 1.15th.","时间速度倍率变为原来的 1.15 次方。"],
         ["Neutron Stars boost Rage Powers gain.","中子星加成狂怒能量获取。"],
-        ["Neutron Stars boost calm powers gain.","中子星加成平静能量获取。"],
+        ["Neutron Stars boost calm powers gain.","中子星加成宁静能量获取。"],
         ["Neutron Star boosts Dark Matters gain.","中子星加成暗物质获取。"],
         ["Neutron Stars raise Wormholes.","中子星对虫洞提供指数加成。"],
         ["Reach {0} uni of black hole without buying any BH Condenser in a Supernova run.","在一次超新星流程中，不购买任何黑洞压缩器达到 {0} uni 黑洞质量。"],
         ["BH Condenser power is raised to the 1.15th.","黑洞压缩器倍率变为原来的 1.15 次方。"],
         ["Neutron Star boosts last star gain.","中子星加成最后一种星辰获取。"],
-        ["Tetr amount to Star boost’s softcap is 50% weaker.","三重阶层对星辰加成软上限的影响弱化 50%。"],
+        ["Tetr amount to Star boost’s softcap is 50% weaker.","四重阶层对星辰加成软上限的影响弱化 50%。"],
         ["Star generators are stronger based on Supernova.","超新星增强星辰生成器。"],
         ["Unlock Star Booster.","解锁星辰助推器。"],
         ["Start with Silicon-14 & Argon-18 unlocked. You can now automatically buy Elements & Atom upgrades.","开局即解锁硅（14Si）与氩（18Ar）。自动购买元素与原子升级。"],
         ["Start with Chromium-24 and Atom upgrade 6 unlocked.","开局即解锁铬（24Cr）与原子升级 6。"],
         ["Start with technetium-43 unlocked, and it's improved. You can automatically gain Relativistic particles from mass.","开局即解锁锝（43Tc），并增强其效果。允许从质量中自动获取相对论粒子。"],
         ["You can now automatically buy Star unlockers & boosters.","自动解锁星辰并购买星辰助推器。"],
-        ["Tetr no longer resets anything.","三重阶层不再重置任何资源。"],
+        ["Tetr no longer resets anything.","四重阶层不再重置任何资源。"],
         ["While in any challenge, you can now automatically complete it before exiting.","在挑战中，可以在退出之前自动完成当前挑战。"],
         ["YOU CAN AFFORD BECAUSE OF EVOLUTION!","进化使你可以购买！"],
         ["You can now automatically buy Photon & Gluon upgrades, they no longer spent their amount.","自动购买光子与胶子升级，且不再消耗对应资源。"],
@@ -2059,13 +2059,13 @@ to dimensional mass => 维度质量
         ["Boost BH Condenser Power.","加成黑洞压缩器倍率。"],
         ["Photons gain is boosted by Collapsed Star.","坍缩星辰加成光子获取。"],
         ["All-Star resources gain is boosted by Photon.","光子加成所有星辰资源获取。"],
-        ["Boost Fabric.","加成时空织物。"],
+        ["Boost Fabric.","加成时空纤维。"],
         ["Raise Wormhole Multiplier.","提高虫洞倍率的指数。"],
         ["Gain more Atoms & Atomic Powers based on Gluon.","胶子增加原子与原子能量获取。"],
         ["Boost Cosmic Ray Power.","加成宇宙射线倍率。"],
         ["Gluons gain is boosted by Quark.","夸克加成胶子获取。"],
         ["Supernova requirement is decreased based on Gluon.","胶子降低超新星需求。"],
-        ["Boost Protostars.","加成原恒星。"],
+        ["Boost Protostars.","加成原初恒星。"],
         ["Gain more nebular dusts based on Gluon.","胶子增加星云尘埃获取。"],
         ["and raise mass gain by","并使质量获取变为原来的"],
         ["Are you sure to switch any type of any Fermion?","确定要切换费米子类型吗？"],
@@ -2161,14 +2161,14 @@ to dimensional mass => 维度质量
         ["gained before","获取，发生在"],
         ["overflow","溢出之前"],
         ["of normal mass to reset previous features for gain Rage Powers.","的普通质量，以重置之前的内容并获得狂怒能量。"],
-        ["of normal mass to reset previous features for gain Calm Powers.","的普通质量，以重置之前的内容并获得平静能量。"],
+        ["of normal mass to reset previous features for gain Calm Powers.","的普通质量，以重置之前的内容并获得宁静能量。"],
         ["Reach over {0} to reset all previous features for gain Dark Matters.","达到 {0} 以重置之前的所有内容并获得暗物质。"],
-        ["Calm Power to reset all previous features for gain Fabrics.","的平静能量，以重置之前的所有内容并获得时空织物。"],
+        ["Calm Power to reset all previous features for gain Fabrics.","的宁静能量，以重置之前的所有内容并获得时空纤维。"],
         ["of Unstable Black Hole.","的不稳定黑洞质量。"],
         ["of wormhole.","的虫洞质量。"],
         ["of black hole","的黑洞质量"],
         ["Reach over {0} to reset all previous features for gain Atoms & Quarks.","达到 {0} 以重置之前的所有内容并获得原子与夸克。"],
-        ["Fabric to reset all previous features for gain Protostars & Quarks.","的时空织物，以重置之前的所有内容并获得原恒星与夸克。"],
+        ["Fabric to reset all previous features for gain Protostars & Quarks.","的时空纤维，以重置之前的所有内容并获得原初恒星与夸克。"],
         ["Quark.","个夸克。"],
         ["Exotic Atoms.","个奇异原子。"],
         ["of dilated mass.","的膨胀质量。"],
@@ -2191,7 +2191,7 @@ to dimensional mass => 维度质量
         ["While in Big Rip, Entropy Rewards don't work, all Primordium effects are 50% weaker except for Epsilon Particles, which don't work, supernova tree upgrades qu2 and qu10 don't work, and you are trapped in Quantum Challenge with modifiers {1}. Death Shards are gained based on your normal mass while in Big Rip. Unlock various upgrades from Big Rip.","大撕裂中，熵奖励失效，除失效的 ε 粒子外，其他原基效果削弱 50%；超新星树升级 qu2 与 qu10 失效。你被困在配置为 {1} 的量子挑战中。基于大撕裂中的普通质量获得死寂碎片，并解锁各类大撕裂升级。"],
         ["Our dimension is Big Ripped. Click to undo.","我们的维度已被大撕裂。点击撤销。"],
         ["Big Rip the Dimension.","对维度进行大撕裂。"],
-        ["Because of Evolution 3, you cannot purchase Nebulae and Prototar Elements!","由于第三次进化，无法购买星云与原恒星元素！"],
+        ["Because of Evolution 3, you cannot purchase Nebulae and Prototar Elements!","由于第三次进化，无法购买星云与原初恒星元素！"],
         ["Dark Shadow.","的黑暗之影。"],
         ["Abyssal Blot.","的深渊之渍。"],
         ["Require","需要"],
@@ -2218,7 +2218,7 @@ to dimensional mass => 维度质量
         ["Complete","先完成"],
         ["Challenge 20","挑战 20"],
         ["first to Evolve.","才能进化。"],
-        ["Ouroboric resets everything up to this point, and so Apples!","衔尾蛇会重置此前的所有内容，包括苹果！"],
+        ["Ouroboric resets everything up to this point, and so Apples!","衔尾蛇重置会清除此前的所有内容，包括苹果！"],
         ["IMR: Ouroboric Beta","质量增量重制版：衔尾蛇 Beta"],
         ["Hept 0","七重阶层 0"],
         ["Reset your hexs (hexes) (and force a darkness reset) but hept/oct/enne etc. up.","重置六重阶层（并强制进行黑暗重置），但提升七重、八重、九重等阶层。"],
@@ -2461,7 +2461,7 @@ QoL => 便利功能
     // Fragments separated by upstream <b>, <span> and tooltip markup.
     add(`
 Tiers => 阶层
-Tetrs => 三重阶层
+Tetrs => 四重阶层
 Pents => 五重阶层
 Hexes => 六重阶层
 Prestige Levels => 转生等级
@@ -2485,9 +2485,10 @@ Quantized => 已量子化
 Lock => 锁定
 maximum => 最大值
 Matter => 物质
-Purple Matter => 深紫色物质
+Purple Matter => 紫色物质
+Violet Matter => 紫罗兰色物质
 Lime Matter => 黄绿色物质
-Purple => 深紫色
+Purple => 紫色
 Lime => 黄绿色
 Inventory => 库存
 Redeem => 兑换
