@@ -87,6 +87,26 @@ test('upstream Element output methods are translated without modifying state att
     assert.equal(element.attrs['tooltip-html'], '<b>质量</b>');
 });
 
+test('real upstream corruption markup translates boxed strings and preserves active markup', () => {
+    const context = translationContext();
+    const corrupt = fs.readFileSync(path.join(root, 'js/saves.js'), 'utf8')
+        .split('\n').find(line => line.startsWith('String.prototype.corrupt ='));
+    assert.ok(corrupt);
+    vm.runInContext(corrupt, context);
+    const source = 'Atomic Power’s effect is <b>25.000%</b> exponentially stronger.';
+    context.source = source;
+    const boxed = vm.runInContext('source.corrupt(false)', context);
+    assert.equal(typeof boxed, 'object');
+    const element = new context.Element();
+    element.setHTML(boxed);
+    assert.equal(element.html, '原子能量的效果 <b>25.000%</b> 获得指数增强。');
+    assert.equal(context.IMR_I18N.translate(new String('Quantum Foam')), '量子泡沫');
+    element.setHTML(vm.runInContext('source.corrupt(true)', context));
+    assert.match(element.html, /^<strike>原子能量的效果 <b>25\.000%<\/b> 获得指数增强。<\/strike>/);
+    assert.match(element.html, /class='corrupted_text'/);
+    assert.ok(!element.html.includes('Atomic Power'));
+});
+
 test('all translation templates retain every dynamic placeholder', () => {
     const context = translationContext();
     for (const [source, target] of context.IMR_ZH_CN.templates) {

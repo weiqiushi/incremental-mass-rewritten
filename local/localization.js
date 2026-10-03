@@ -14,6 +14,10 @@
     }
 
     const normalize = text => text.replace(/\s+/g, ' ').trim();
+    // Upstream String.prototype.corrupt(false) returns a boxed String.
+    // Unbox display text, including strings created in a different realm.
+    const displayString = value => value !== null && typeof value === 'object'
+        && Object.prototype.toString.call(value) === '[object String]' ? String(value) : value;
     const escape = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const cache = new Map();
     const templateIndex = new Map();
@@ -43,6 +47,7 @@
     }
     const phrasePattern = new RegExp('(?<![A-Za-z0-9_])(?:' + [...phrases.keys()].sort((a,b) => b.length-a.length).map(escape).join('|') + ')(?![A-Za-z0-9_])', 'g');
     function translate(text) {
+        text = displayString(text);
         if (typeof text !== 'string' || !/[A-Za-z]/.test(text)) return text;
         if (cache.has(text)) return cache.get(text);
         const source = normalize(text);
@@ -76,6 +81,7 @@
     // title="..." text inside an onclick handler can never be translated.
     const attributePattern = /\s+([^\s=/>]+)\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/g;
     function html(value) {
+        value = displayString(value);
         if (typeof value !== 'string') return value;
         let result = '', cursor = 0, skip = false;
         for (const token of value.matchAll(tokenPattern)) {

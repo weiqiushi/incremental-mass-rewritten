@@ -9,3 +9,11 @@
 :where(html[lang="zh-CN"]) * {
     font-family: var(--font), "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "IMR Chinese Subset", "Noto Sans JP", sans-serif;
 }
+
+/* Six cards fit between both sidebars at 1920px, while smaller windows wrap. */
+.fermions .fermion_btn {
+    box-sizing: border-box;
+    width: clamp(200px, calc(100% / 6 - 12px), 240px);
+    min-height: 240px;
+    height: auto;
+}
