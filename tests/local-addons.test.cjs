@@ -107,6 +107,35 @@ test('real upstream corruption markup translates boxed strings and preserves act
     assert.ok(!element.html.includes('Atomic Power'));
 });
 
+test('upstream chroma and primordium descriptions translate punctuation and optional effects', () => {
+    const context = translationContext();
+    context.player = { dark: { unl: false } };
+    context.format = value => String(value);
+    context.hasPrestige = () => false;
+    const trees = new Set();
+    context.hasTree = id => trees.has(id);
+    run(context, 'js/quantum/chroma.js');
+    run(context, 'js/quantum/primordium.js');
+    const chroma = vm.runInContext('CHROMA.effDesc[1]', context);
+    const particles = vm.runInContext('PRIM.particle.effDesc', context);
+    const number = { toString: () => '1.2013', softcapHTML: () => '' };
+    const { html } = context.IMR_I18N;
+    assert.equal(html(chroma([number])), '使五重阶层之前的所有需求降低至原来的 1/1.2013。');
+    context.player.dark.unl = true;
+    assert.equal(html(chroma([number])), '使五重阶层之前、奇异折算之前的所有需求降低至原来的 1/1.2013。');
+    number.softcapHTML = () => '<span class="soft">(softcapped)</span>';
+    const capped = html(chroma([number]));
+    assert.ok(capped.includes('1/1.2013<span class="soft">'));
+    assert.ok(!capped.includes('Makes'));
+    for (const unlocked of [false, true]) {
+        if (unlocked) { trees.add('prim2'); trees.add('prim3'); }
+        assert.equal(html(particles[5](['0.2466', '2.4660'])), '费米子获取的底数增加 0.2466'
+            + (unlocked ? ' /<br> 费米子获得 2.4660 个免费阶层' : ' '));
+        assert.equal(html(particles[6](['12,597,408', '1.5000'])), '所有辐射波获取乘以 12,597,408'
+            + (unlocked ? ' /<br> 所有辐射波效果增强 1.5000 倍' : ''));
+    }
+});
+
 test('all translation templates retain every dynamic placeholder', () => {
     const context = translationContext();
     for (const [source, target] of context.IMR_ZH_CN.templates) {
