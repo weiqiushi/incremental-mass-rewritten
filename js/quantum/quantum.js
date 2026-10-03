@@ -31,7 +31,7 @@ const QUANTUM = {
             else CONFIRMS_FUNCTION.qu(auto,force,rip,bd)
         }
     },
-    doReset(force=false, dark=false, metaF=false) {
+    doReset(force=false, dark=false, metaF=false, chal=false) {
         if (!tmp.sn.unl) {
 			SUPERNOVA.doReset()
 			return
@@ -71,7 +71,7 @@ const QUANTUM = {
         player.supernova.fermions.points = [E(0),E(0)]
         if (!metaF) player.supernova.fermions.choosed = ""
 
-        for (let x = 0; x < 2; x++) if (!hasTree("qu_qol"+(2+4*x)) || force) for (let y = 0; y < 6; y++) player.supernova.fermions.tiers[x][y] = E(0)
+        for (let x = 0; x < 2; x++) if (!hasTree("qu_qol"+(2+4*x)) || (force && !chal)) for (let y = 0; y < 6; y++) player.supernova.fermions.tiers[x][y] = E(0)
 
         player.supernova.radiation.hz = !c16&&hasUpgrade('br',6)?E(1e50):E(0)
         for (let x = 0; x < 7; x++) {

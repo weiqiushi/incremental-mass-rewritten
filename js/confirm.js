@@ -97,7 +97,7 @@ const CONFIRMS_FUNCTION = {
     },
     enterQC() {
         player.qu.qc.active = !player.qu.qc.active
-        QUANTUM.doReset(player.qu.qc.active)
+        QUANTUM.doReset(player.qu.qc.active, false, false, true)
     },
     bigRip() {
         if (tmp.dark.run) return
