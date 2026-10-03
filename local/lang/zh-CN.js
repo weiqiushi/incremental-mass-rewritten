@@ -522,6 +522,7 @@ to dimensional mass => 维度质量
         ["{8} (force an Infinity reset), but {9} up.","{8}（强制进行无限重置），但提升{9}。"],
         ["Req:","需求："],
         ["At {0} {1} - {2}","{0} {1}：{2}"],
+        ["At Prestige Level {0} - {1}","转生等级 {0}：{1}"],
         ["of Ascension Base","的飞升基础值"],
         ["Are you sure you want to reset?","确定要重置吗？"],
         ["Boost Mass gain by {0}","使质量获取乘以 {0}"],
