@@ -136,6 +136,43 @@ test('upstream chroma and primordium descriptions translate punctuation and opti
     }
 });
 
+test('glyph Max matches the UI while claims subtract owned glyphs and preserve passive targets', () => {
+    const Decimal = require('../js/break_eternity.js');
+    const context = vm.createContext({
+        Decimal, E: value => new Decimal(value),
+        player: { chal: { active: 0 }, dark: { run: { active: true, gmode: 1, gamount: 420,
+            glyphs: Array.from({ length: 6 }, () => new Decimal(0)), upg: [] } } },
+        tmp: { dark: { rayEff: {}, mass_glyph_eff: [], mass_glyph_gain: [], mg_passive: [] },
+            c16: { in: false }, matters: { FSS_eff: [1, 1] }, glyph_upg_eff: [] },
+        OURO: { evo: 0 }, CHALS: { inChal: () => false },
+        hasPrestige: () => false, hasElement: (id, layer) => id === 7 && layer === 1,
+        appleEffect: () => 1,
+    });
+    context.window = context;
+    run(context, 'js/darkness/dark_run.js');
+    vm.runInContext('DARK_RUN.mass_glyph_gain = Array.from({length: 6}, () => () => E(729));', context);
+    context.updateDarkRunTemp();
+    assert.equal(context.tmp.dark.mass_glyph_gain[0].toNumber(), 420);
+    run(context, 'local/game-fixes.js');
+    const runState = context.player.dark.run;
+    const gain = () => { context.updateDarkRunTemp(); return context.tmp.dark.mass_glyph_gain[0].toNumber(); };
+    assert.equal(gain(), 729);
+    runState.gmode = 0;
+    assert.equal(gain(), 420);
+    runState.glyphs[0] = new Decimal(700);
+    assert.equal(gain(), 29);
+    runState.gmode = 1;
+    assert.equal(gain(), 29);
+    runState.glyphs[0] = new Decimal(750);
+    assert.equal(gain(), 0);
+    runState.glyphs[0] = new Decimal(0);
+    runState.active = false;
+    assert.equal(gain(), 0);
+    assert.equal(context.tmp.dark.mg_passive[0].toNumber(), 729);
+    assert.equal(runState.gmode, 1);
+    assert.equal(runState.gamount, 420);
+});
+
 test('all translation templates retain every dynamic placeholder', () => {
     const context = translationContext();
     for (const [source, target] of context.IMR_ZH_CN.templates) {

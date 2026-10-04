@@ -12,12 +12,14 @@
 <script src="local/lang/zh-CN.js"></script>
 <script src="local/localization.js"></script>
 <script src="local/time-speed.js"></script>
+<script src="local/game-fixes.js"></script>
 ```
 
 - `local/lang/zh-CN.js`：中文词条、完整句子和动态文本模板。包含基础资源、挑战、元素、量子、黑暗、无限、奇异原子、衔尾蛇与星座等内容。
 - `local/localization.js`：在显示文本的入口翻译；覆盖静态页面、`Element` 输出、工具提示、通知、弹窗和浏览器对话框。原版内部的资源名、升级 ID、存档结构与计算公式保持原样。
 - `local/style.css`：为所选字体补充中文字体回退，优先使用系统中文字体，随后使用随扩展附带的中文字体子集和原版 Noto Sans JP。费米子卡片宽度随可用空间调整，使 1920×1080 的默认双边栏布局每组保持六个一行；窄窗口仍自动换行。
 - `local/time-speed.js`：时间倍率控件、存档默认值与实时计算入口。
+- `local/game-fixes.js`：独立的原版错误修复。目前修正黑暗狂奔的雕文领取限制：最大开启时不限制领取量，关闭时按所设数量限制。原版的判断条件与界面显示相反。上游修正后可移除对应补丁；同步时检查 `updateDarkRunTemp` 的实现。
 
 翻译按完整词条、动态模板、短语的顺序匹配。模板中 `{0}`、`{1}` 等代表原版插入的数值或文字；翻译时可调整顺序，但必须保留所有占位符。具体句子优先于通用标签，避免“Tier {0}”抢先匹配奖励说明。
 
