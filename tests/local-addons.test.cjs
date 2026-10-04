@@ -151,9 +151,6 @@ test('glyph Max matches the UI while claims subtract owned glyphs and preserve p
     context.window = context;
     run(context, 'js/darkness/dark_run.js');
     vm.runInContext('DARK_RUN.mass_glyph_gain = Array.from({length: 6}, () => () => E(729));', context);
-    context.updateDarkRunTemp();
-    assert.equal(context.tmp.dark.mass_glyph_gain[0].toNumber(), 420);
-    run(context, 'local/game-fixes.js');
     const runState = context.player.dark.run;
     const gain = () => { context.updateDarkRunTemp(); return context.tmp.dark.mass_glyph_gain[0].toNumber(); };
     assert.equal(gain(), 729);

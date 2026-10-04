@@ -307,7 +307,7 @@ function updateDarkRunTemp() {
         dtmp.mass_glyph_eff[x] = DARK_RUN.mass_glyph_eff(x)
         let gain = DARK_RUN.mass_glyph_gain[x]()
         let mg = Decimal.max(0,(dra ? gain : E(0)).sub(player.dark.run.glyphs[x]))
-        if (player.dark.run.gmode == 1) mg = Decimal.min(player.dark.run.gamount,mg)
+        if (player.dark.run.gmode == 0) mg = Decimal.min(player.dark.run.gamount,mg)
         dtmp.mass_glyph_gain[x] = mg
         dtmp.mg_passive[x] = x < dp ? gain : 0
     }
