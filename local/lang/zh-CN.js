@@ -2112,7 +2112,7 @@ to dimensional mass => 维度质量
         ["All u-leptons at once, and force quantum reset.","同时激活所有 U-轻子，并强制进行量子重置。"],
         ["Currently: X","当前效果：X"],
         ["Next Tier at:","下一阶层需求："],
-        ["(Increased by {9})","（增加 {9}）"],
+        ["(Increased by {9})","（需求指标：{9}）"],
         ["On Active: {11}","激活惩罚：{11}"],
         ["Currently: {0}","当前效果：{0}"],
         ["Radio Boost","无线电波加成"],
