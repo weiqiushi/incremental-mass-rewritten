@@ -33,7 +33,7 @@ const STARS = {
         let p = E(0.75)
         return p
     },
-    effect() {
+    effect(forBlackHole = false) {
         let x = E(1)
 		let [p, pp] = [E(1), E(1)]
 		if (hasElement(48)) p = p.mul(1.1)
@@ -48,7 +48,9 @@ const STARS = {
 		x = s.max(1).log10().add(1).pow(r)
 		x = x.softcap("ee15",0.95,2).softcap("e5e22",0.95,2).softcap("e1e24",0.91,2)
 		if (tmp.rip.in || OURO.evo >= 2) x = x.softcap('ee33',0.9,2)
-        if (tmp.c16.in) x = E(1)
+        // C16 disables the mass multiplier, but element 46 still uses the
+        // reduced star reward that powered black holes before the split.
+        if (tmp.c16.in) x = forBlackHole ? overflow(x,10,0.5) : E(1)
 
         return [x.min('ee70'), hasElement(162) ? this.expEffect() : E(1)]
     },

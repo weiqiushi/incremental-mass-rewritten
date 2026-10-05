@@ -380,7 +380,11 @@ const ELEMENTS = {
             desc: `Collapsed star's effect boosts mass of black hole gain at a reduced rate.`,
             cost: E('e510'),
             effect() {
-                let x = tmp.star_unl?tmp.stars.effect[0].add(1).pow(0.02):E(1)
+                let x = E(1)
+                if (tmp.star_unl) {
+                    let stars = tmp.c16.in ? STARS.effect(true)[0] : tmp.stars.effect[0]
+                    x = stars.add(1).pow(0.02)
+                }
                 return x
             },
             effDesc(x) { return format(x)+"x" },
@@ -2192,6 +2196,7 @@ function getChunk(x) {
 }
 
 function hasElement(i, layer = 0) {
+	if (tmp.c16.in && isElemCorrupted(i, layer)) return false
 	let s = player.atom[["elements", "muonic_el"][layer]]
 	if (s.includes(i)) return true
 

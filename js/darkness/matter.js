@@ -48,7 +48,7 @@ const MATTERS = {
 				x = rdc ? x.mul(glyphUpgEff(14,1)) : x.pow(glyphUpgEff(14,1))
 				if (hasBeyondRank(1,7)) x = rdc ? x.mul(beyondRankEffect(1,7)) : x.pow(beyondRankEffect(1,7))
 			}
-			if (hasElement(11,1) || !rdc) x = rdc ? x.mul(tmp.matters.FSS_eff[0]) : x.pow(tmp.matters.FSS_eff[0])
+			if (hasElement(11,1) || !rdc) x = x.pow(tmp.matters.FSS_eff[0])
 			if (hasElement(4,1)) x = rdc ? x.pow(1.1) : expMult(x,1.05)
 			if (hasElement(227)) x = rdc ? x.pow(elemEffect(227)) : expMult(x,elemEffect(227))
 			if (i < MATTERS_LEN-1) x = rdc ? x.pow(tmp.matters.upg[i+1].exp) : expMult(x,tmp.matters.upg[i+1].exp)
