@@ -593,7 +593,7 @@ const PRESTIGES = {
 
 const PRES_LEN = PRESTIGES.fullNames.length
 
-function hasPrestige(x,y) { return player.prestiges[x].gte(y) && (x || !tmp.c16.in || CORRUPTED_PRES.includes(y)) }
+function hasPrestige(x,y) { return player.prestiges[x].gte(y) && (x || !tmp.c16.in || !CORRUPTED_PRES.includes(y)) }
 
 function prestigeEff(x,y,def=E(1)) { return tmp.prestiges.eff[x][y] || def }
 
