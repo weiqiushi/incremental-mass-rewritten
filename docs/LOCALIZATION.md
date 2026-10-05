@@ -41,7 +41,7 @@ HTML 翻译仅处理文本及 `tooltip-html`、`title`、`placeholder`、`aria-l
 
 1. 正常同步上游 v0.8-beta 分支。
 2. 若 `index.html` 冲突，保留上面的加载区块，并确保仍在原版全部脚本之后。
-3. 检查上游是否改名或移除了 `Element`、`setupHTML`、弹窗函数、`getPlayerData`、`loadPlayer`、`loop`、`calc`、`getScalingName`、`updateOptionsHTML` 或 `confirm_table`。这些是扩展使用的接口。
+3. 检查上游是否改名或移除了 `Element`、`setupHTML`、弹窗函数、`getPlayerData`、`loadPlayer`、`loop`、`calc`、`getScalingName`、`overflowFormat`、`updateOptionsHTML` 或 `confirm_table`。这些是扩展使用的接口。
 4. 检查新增界面和升级说明，补充语言包。控制台的 `IMR_I18N.missing` 可辅助发现未匹配的文本，但它不是完整覆盖率报告；部分翻译的句子也需要人工检查。
 5. 运行下述检查，并试一次旧存档导入。
 

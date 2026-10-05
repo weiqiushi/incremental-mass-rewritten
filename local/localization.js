@@ -12,6 +12,15 @@
             return translated ? translated + ' ' : label;
         };
     }
+    // Overflow messages put the value in a separate <b> node. Keep its markup
+    // intact while placing the Chinese operation on both sides of the value.
+    if (typeof window.overflowFormat === 'function') {
+        const overflowFormat = window.overflowFormat;
+        window.overflowFormat = function (...args) {
+            return overflowFormat.apply(this, args).replace(/^(rooted|raised) by (.*)$/, (_, operation, value) =>
+                operation === 'rooted' ? `开 ${value} 次方根` : `变为原来的 ${value} 次方`);
+        };
+    }
 
     const normalize = text => text.replace(/\s+/g, ' ').trim();
     // Upstream String.prototype.corrupt(false) returns a boxed String.
