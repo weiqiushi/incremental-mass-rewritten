@@ -2539,6 +2539,21 @@ Currently: +{0} later to Super Rank starting, {1}% weaker to Super Tickspeed sca
 {0} later to Supercritical Rank & All Fermions starting, {1} weaker to Super Overpower scaling => 级别的超临界折算与所有费米子阶层折算延迟出现：{0}，超强化器的超级折算削弱{1}
 Currently: {0} later to Supercritical Rank & All Fermions starting, {1} weaker to Super Overpower scaling => 当前效果：级别的超临界折算与所有费米子阶层折算延迟出现：{0}，超强化器的超级折算削弱{1}
 `);
+    // These resource descriptions are split by <h4>/<b> around live values.
+    add(`
+{0} Galactic Stars (based on collapsed stars and galactic prestige), which strengthens star generators by => {0} 个星系星辰（基于坍缩星辰与星系转生），使星辰生成器的产量指数提高
+Galactic Stars (based on collapsed stars and galactic prestige), which strengthens star generators by => 个星系星辰（基于坍缩星辰与星系转生），使星辰生成器的产量指数提高
+which strengthens star generators by => 使星辰生成器的产量指数提高
+exponentially. => 。
+{0} of Prestige Mass (based on prestige base and galactic prestige), which weakens mass overflow^1-2 by => {0} 的转生质量（基于转生基础值与星系转生），使质量的一重与二重溢出削弱
+of Prestige Mass (based on prestige base and galactic prestige), which weakens mass overflow^1-2 by => 的转生质量（基于转生基础值与星系转生），使质量的一重与二重溢出削弱
+which weakens mass overflow^1-2 by => 使质量的一重与二重溢出削弱
+{0} of Prestige Mass (based on prestige base and galactic prestige), which raises Quarks by => {0} 的转生质量（基于转生基础值与星系转生），使夸克获取的指数变为原来的
+of Prestige Mass (based on prestige base and galactic prestige), which raises Quarks by => 的转生质量（基于转生基础值与星系转生），使夸克获取的指数变为原来的
+^{0} on exponent => {0} 次方
+based on your mass of black hole, when exiting the challengewith more than => （基于黑洞质量），退出挑战时结算；需要超过
+based on your mass of black hole, when exiting the challenge. => （基于黑洞质量），退出挑战时结算。
+`);
     window.IMR_ZH_CN.phrases = Object.entries(window.IMR_ZH_CN.exact);
     // Standalone labels include “折算”; phrases inside sentences keep their
     // adjectives so existing full translations do not acquire duplicate suffixes.
